@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/auth";
+const API_URL = "https://autenticacao-dcs.up.railway.app/api/auth";
 
 document.getElementById("registerForm").addEventListener("submit",  async (e) =>{
     e.preventDefault();
@@ -51,4 +51,5 @@ document.getElementById("loginForm").addEventListener("submit", async (e) =>{
     } catch (error) {
         console.error(error);
     }
+
 });
