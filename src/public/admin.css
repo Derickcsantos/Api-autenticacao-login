@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+    background: #1e1e2f;
+    color: #fff;
+    width: 220px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sidebar nav a {
+    color: #c3c3c3;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #3b3b59;
+    color: #fff;
+}
+
+/* ==== MAIN CONTENT ==== */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    border-radius: 50%;
+}
+
+/* ==== CARDS ==== */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    flex: 1 1 200px; /* cards ocupam no mínimo 200px */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e1e2f;
+}
+
+/* ==== TABLE ==== */
+.content {
+    padding: 20px;
+    overflow-x: auto; /* tabela com scroll no mobile */
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 400px;
+}
+
+.content th, .content td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.content th {
+    background: #f0f0f0;
+}
+
+/* ==== RESPONSIVIDADE ==== */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .sidebar .logo {
+        display: none; /* esconde logo para economizar espaço */
+    }
+
+    .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .sidebar nav a {
+        padding: 8px 12px;
+        margin-bottom: 0;
+    }
+
+    .cards {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        font-size: 0.9rem;
+    }
+}

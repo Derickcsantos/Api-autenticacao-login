@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Página não encontrada</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: #f1faee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 10px;
+      animation: pulse 1.5s infinite;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      background: #e63946;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      background: #d62828;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        color: #f1faee;
+      }
+      50% {
+        color: #a8dadc;
+      }
+    }
+
+    .emoji {
+      font-size: 3rem;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="emoji">🚀</div>
+    <h1>404</h1>
+    <p>Ops! A página que você procura não foi encontrada.</p>
+    <a href="/">Voltar para o início</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">Meu Painel</div>
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Usuários</a>
+            <a href="#">Configurações</a>
+            <a href="#">Relatórios</a>
+            <a onclick="window.location.href='/'">Sair</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <h1>Bem-vindo(a), Admin</h1>
+            <div class="user-info">
+                <img src="https://i.pravatar.cc/40" alt="Avatar">
+                <span>Admin</span>
+            </div>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h2>Usuários</h2>
+                <p>125</p>
+            </div>
+            <div class="card">
+                <h2>Pedidos</h2>
+                <p>48</p>
+            </div>
+            <div class="card">
+                <h2>Visitas</h2>
+                <p>3.210</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Últimos Registros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maria Silva</td>
+                        <td>maria@email.com</td>
+                        <td>12/08/2025</td>
+                    </tr>
+                    <tr>
+                        <td>João Santos</td>
+                        <td>joao@email.com</td>
+                        <td>11/08/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Lima</td>
+                        <td>lucas@email.com</td>
+                        <td>10/08/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

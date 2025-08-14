@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>🔐 Sistema de Autenticação</h1>
+
+        <div class="form-box">
+            <h2>Criar Conta</h2>
+            <form id="registerForm">
+                <input type="text" id="regName" placeholder="Nome completo" required>
+                <input type="email" id="regEmail" placeholder="E-mail" required>
+                <input type="password" id="regPassword" placeholder="Senha" required>
+                <button type="submit" class="btn-primary">Registrar</button>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <h2>Fazer Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="E-mail" required>
+                <input type="password" id="loginPassword" placeholder="Senha" required>
+                <button type="submit" class="btn-secondary">Entrar</button>
+            </form>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

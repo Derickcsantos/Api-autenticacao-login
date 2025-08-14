@@ -1,0 +1,111 @@
+/* Fonte geral */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container geral */
+.auth-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Título principal */
+.auth-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Box de formulário */
+.form-box {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Títulos dos formulários */
+.form-box h2 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Campos de input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Botão primário */
+.btn-primary {
+    background: #4facfe;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3a8de0;
+}
+
+/* Botão secundário */
+.btn-secondary {
+    background: #00c6ff;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #009ad4;
+}
+
+/* Mensagens */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Mensagem de sucesso */
+#message.success {
+    color: #0f5132;
+    background: #d1e7dd;
+    border: 1px solid #badbcc;
+}
+
+/* Mensagem de erro */
+#message.error {
+    color: #842029;
+    background: #f8d7da;
+    border: 1px solid #f5c2c7;
+}
